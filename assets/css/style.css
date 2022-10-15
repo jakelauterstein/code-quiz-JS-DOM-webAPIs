@@ -64,3 +64,33 @@ main h1 {
   cursor: pointer;
   transition: all ease 0.3s;
 }
+
+.timer-container {
+  display: inline;
+  
+}
+.timer {
+  display: inline;
+
+}
+
+.quiz-container {
+
+  margin: 40px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  border-radius: 20px;
+  padding-bottom: 200px;
+
+}
+
+.radio-btn {
+  display: block;
+}
+/* .timer-display {
+  display: inline;
+
+} */
