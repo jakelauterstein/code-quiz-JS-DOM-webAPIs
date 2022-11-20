@@ -15,27 +15,53 @@
             <li class='nav-list-item'>
                 <a class="nav-link" href="index.html">Home</a>
             </li>
-            <li class='nav-list-item'>
+            <!-- <li class='nav-list-item'>
                 <a class="nav-link" href="high-scores.html">High Scores</a>
-            </li>
+            </li> -->
         </ul>
     </nav>
 </header>
 
-<main class='main'>
-    <h1 class='main-title'>Coding Fundamentals – Quick Quiz</h1>
+<main>
+<!-- container, question container, controls -->
 
-    <div class="quiz-container">
+<div class="container">
+    <div class="hide" id="question-container">
+        <div id="question">Question</div> 
+        <div id="answer-buttons" class="btn-grid">
+            <button class='btn'>Answer 1</button>
+            <button class='btn'>Answer 2</button>
+            <button class='btn'>Answer 3</button>
+            <button class='btn'>Answer 4</button>
+        </div>
+        <div id='timer-container' class="timer-container">
+            <p class="timer"></p>
+        </div>
+    </div>
+    <div class="controls">
+        <button id="restart-btn" class="restart-btn btn hide">Restart Quiz</button>
+        <buttn id="start-btn" class="start-btn btn">Start Quiz</buttn>
+        <button id="next-btn" class="next-btn btn hide">Next</button>
+        <button id='submit-btn' class='btn submit-btn hide'>Submit Score</button>
+        <p id="correct" class="hide">Correct!</p>
+        <p id="incorrect" class="hide">Incorrect, time penalty applied!</p>
+    </div>
+    <div class="submit-form hide" id="submit-form">
+        <input type="text" id="username">
+        <button class='btn' id='username-submit'>Submit Username</button>
+        <button class='btn hide' id='show-highscores-btn'>View Highscores</button>
+        <button id="restart-btn2" class="btn hide">Restart Quiz</button>
 
     </div>
-
     
+</div>
+
+<div class="highscore-container hide" id="highscore-container">
+    <h2>High Scores</h2>
+    <ol id="highScores"></ol>
+</div>
+
 </main>
-
-
-
-
-
 
    <script src="assets/js/script.js"></script>
 </body>
